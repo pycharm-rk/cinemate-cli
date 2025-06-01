@@ -1,39 +1,78 @@
-# Cinemate
+# 🎬 Cinemate
 
-A simple Python CLI movie recommender that asks a few questions and suggests movies based on your preferences.
+Cinemate is a simple command-line movie recommender built with Python. It asks a few quick questions and suggests films based on your **mood**, **genre**, and **preferred decade**.
 
-## Setup Instructions
+---
 
-1. **Install Python**: Ensure Python 3.x is installed on your system. You can download it from https://www.python.org/downloads/
+## 🚀 Features
 
-2. **Clone or Download this Project**
-   ```bash
-   git clone <your-github-repo-url>
-   cd cinemate
-   ```
+- Choose your **genre** (e.g., drama, sci-fi, romance)
+- Pick your **mood** (e.g., inspiring, emotional, intense)
+- Narrow down by **decade** (e.g., 1990s, 2000s)
+- Smart fallback if no exact match is found
 
-   Or, if you downloaded a zip file, unzip it and navigate into the directory.
+---
 
-3. **(Optional) Create Virtual Environment**
-   ```bash
-   python -m venv env
-   source env/bin/activate  # On Windows: env\Scripts\activate
-   ```
+## 🛠️ Getting Started
 
-4. **Run the Application**
-   ```bash
-   python src/cinemate/main.py
-   ```
+Clone the repo:
 
-5. **Run Tests**
-   ```bash
-   python -m unittest discover tests
-   ```
+```bash
+git clone https://github.com/your-username/cinemate-cli.git
+cd cinemate-cli
+```
 
-## How It Works
+Install dependencies if needed (none for this version):
 
-- Asks the user 3 questions (genre, mood, and decade).
-- Filters a hardcoded movie list based on user preferences.
-- Prints up to 3 recommendations or fallback results.
+```bash
+pip install -r requirements.txt
+```
 
-Enjoy your movie night! 🍿
+---
+
+## 🎮 Usage
+
+Run the CLI from the project root using:
+
+```bash
+python -m src.cinemate.main
+```
+
+---
+
+## ✅ Run Tests
+
+```bash
+python -m unittest discover tests
+```
+
+---
+
+## 📂 Project Structure
+
+```
+cinemate-cli/
+├── src/
+│   └── cinemate/
+│       ├── __init__.py
+│       ├── main.py
+│       └── logic.py
+├── tests/
+│   └── test_logic.py
+├── requirements.txt
+├── README.md
+└── .gitignore
+```
+
+---
+
+## 🧠 Inspiration
+
+This project was built to practice Python and create a fun, interactive terminal app for movie recommendations.
+
+---
+
+## 📜 License
+
+MIT License
+
